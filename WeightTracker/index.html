@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Password</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/script.js"></script>    
+</head>
+<body>    
+    <div data-role="header" class="header">      
+      <h1>Weight Tracker</h1>        
+    </div>  
+    <div class="flex"> 
+      <div class="numPad">
+        <div class="disp">
+          <input type="text" id="passcode" name="passcode" value=""> 
+        </div>          
+          <div class="flex r row1">
+            <a class="key"data-role="button" onclick="addKey(1)">1</a>
+            <a class="key"data-role="button" onclick="addKey(2)">2</a>
+            <a class="key"data-role="button" onclick="addKey(3)">3</a>
+          </div>      
+          <div class="flex r row2">
+            <a class="key" data-role="button" onclick="addKey(4)">4</a>
+            <a class="key" data-role="button" onclick="addKey(5)">5</a>
+            <a class="key" data-role="button" onclick="addKey(6)">6</a>
+          </div>
+          <div class="flex r row3">
+            <a class="key" data-role="button" onclick="addKey(7)">7</a>
+            <a class="key" data-role="button" onclick="addKey(8)">8</a>
+            <a class="key" data-role="button" onclick="addKey(9)">9</a>
+          </div>
+          <div class ="flex r row4">
+            <a class="key"data-role="button" onclick="addKey('bksp')" data-icon="delete">Del</a>
+            <a class="key"data-role="button" onclick="addKey(0)">0</a>
+            <a class="key" data-role="button" id="btnEnter" onclick="checkPass()" type="submit">Ent</a>
+          </div>
+      </div>  
+    </div> 
+    <div>    
+      <h3>Default Password: 1234</h3>
+    </div>
+    <div class="footer">
+      <footer>Cody Peterson CSIS 408</footer>
+    </div>     
+  </div>
+
+  

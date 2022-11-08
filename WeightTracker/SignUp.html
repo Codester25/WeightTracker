@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/script.js"></script>
+    
+</head>
+<body onload="displayUser()">
+  <div data-role="page" id="pageUserInfo"  >
+    <div data-role="header" class="header"> 
+      <nav class="navbar">
+          <h1>Sign Up Form</h1>        
+          <div class="navbar-list"> 
+              <ul>
+                  <li><a href="about.html">About</a></li>                
+                  <li><a href="Menu.html">Menu</a></li>
+              </ul>
+          </div>
+      </nav>
+    </div>
+    <div data-role="content">
+      <form id="frmUserForm" action="">
+          <div class="field">
+            <label for="FirstName">First Name: </label>
+            <input type="text" placeholder="First Name" name="FirstName" id="FirstName" required>
+          </div>  
+          <div class="field">
+            <label for="LastName">Last Name: </label>
+            <input type="text" placeholder="Last Name" name="LastName" data-mini="false" id="LastName" value="" required>
+          </div>        
+          <div class="field">
+            <label for="birthDate">Birthdate: </label>
+            <input type="date" name="birthDate" data-mini="false" id="birthDate" value="" required>  
+          </div>
+          <div class="field">
+            <label for="Password">Password: </label>
+            <input type="number" placeholder="New Password" name="Password" data-mini="false" id="Password" value="" required>
+          </div>
+          <div class="field">
+            <label for="PhoneNumber">Phone Number: </label><br>
+            <input type="text" placeholder="Phone Number" name="PhoneNumber" data-mini="false" id="PhoneNumber" value="" required>
+          </div>    
+          <div class="field">
+            <label for="Gender" class="select">Gender: </label>
+            <select name="Gender" id="Gender" required>
+              <option>Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>              
+            </select>
+          </div>  
+          <br>
+        <button onclick="storeUser()" class="button">Submit</button>
+        
+        <div class="userInfo"></div>
+          <h2>Updated Information</h3>
+          <span id="savedFirstName"></span>
+          <span id="savedLastName"></span>
+          <span id="savedBirthDate"></span>
+          <span id="savedPassword"></span>
+          <span id="savedPhone"></span>
+          <span id="savedGender"></span>      
+      </form>
+    </div>
+    <div class="footer">
+      <footer>Cody Peterson CSIS 408</footer>
+    </div>
+  </div>
+
+</body>
+</html>

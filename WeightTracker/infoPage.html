@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>infoPage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/script.js"></script>
+</head>
+<body onload="drawDumbell();">
+    <div data-role="header" class="header"> 
+        <nav class="navbar">
+            <h1>Information Page</h1>        
+            <div class="navbar-list"> 
+                <ul>
+                    <li><a class="active" href="infoPage.html">About</a></li>                
+                    <li><a href="Menu.html">Menu</a></li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+    <div class="aboutContent"> 
+        <p> 
+            This website was very exciting to build. It has a password with a keypad for entry
+            and has a menu that has three buttons linking to a sign up page, weight-entry,
+            and a progress. This is intended to help track your progress toward a desired
+            goal weight. The Sign Up collects data on the user and all fields should be 
+            entered before starting to input weight entries. Next the weight-entry is for 
+            the user to established there current weight, the day of that weight, the goal,
+            and Calories used that day. While the idea is to have the user input their info 
+            on each day I needed to allow the user to input multiple dates to have multiple
+            data points to show progress. Although a user may forget a day to track and can 
+            add it on this page. The progress page requires data to be used and hold a 
+            welcome message, a progress chart, and a table with the data entries. It 
+            also contains the first entry for a starting weight as well as the last weight 
+            being the current one. Goals should stay consistent however may be changed
+            throughout. I hope this application helps you reach your goals in reaching and
+            maintaining a healthy lifestyle.
+        </p>  
+    </div>     
+    <canvas id="canvasElement" width="500" height="300"></canvas>
+    <div class="footer">
+        <footer>Cody Peterson CSIS 408</footer>
+    </div> 
+</body>
+</html>

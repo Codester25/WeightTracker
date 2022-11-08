@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Entry Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/script.js"></script>
+    
+</head>
+<body onload="dispData();">
+      <div data-role="header" class="header"> 
+        <nav class="navbar">
+            <h1>Weight Entry</h1>        
+            <div class="navbar-list"> 
+                <ul>
+                    <li><a href="infoPage.html">Info</a></li>                
+                    <li><a href="Menu.html">Menu</a></li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+        <div data-role="content">
+          <form id="WeghtEntryForm" action="">
+            <div>  
+              <div class="field">
+                <label for="Weight">Current Weight: </label>
+                <input type="text" placeholder="lbs" name="Weight"  data-mini="false" id="Weight" value="" required>
+              </div>
+              <div class="field">
+                <label for="weighDate">Weigh Date: </label>
+                <input type="date" placeholder="mm-dd-yyyy" name="weighDate" data-mini="false" id="weighDate" value="" required>
+              </div>
+              <div class="field">
+                <label for="Goal">Goal: </label>
+                <input type="text" placeholder="lbs" name="Goal" data-mini="false" id="Goal" value="">
+              </div>
+              <div class="field">
+                <label for="Calories">Calories: 
+                </label>
+                <input type="number" placeholder="0" name="Calories" data-mini="false" id="Calories" value="" required>
+              </div class="field">
+            </div>
+          <div class="hor">
+            <button onclick="addData();" class="button">Save</button>
+            <button onclick="clearWeightData();" class="button" >Clear Entry</button>
+            <button onclick="clearAll();" class="button" >Clear All</button>
+          </div>  
+          </form>
+          <h2>Entry Information</h2> 
+        <div id="output">
+          <table>
+              <thead>
+                  <tr>
+                      <th>Weigh-in Date</th>
+                      <th>Weight</th>                      
+                      <th>Goal</th>
+                      <th>Calories</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <!--hours and dates display for graph-->
+              </tbody>
+          </table>
+        </div>  
+      </div>
+        <div class="footer">
+            <footer>Cody Peterson CSIS 408</footer>
+          </div>  
